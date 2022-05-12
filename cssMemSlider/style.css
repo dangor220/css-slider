@@ -84,12 +84,18 @@ body {
   width: 0.7em;
   height: 0.7em;
   border-radius: 50%;
-  transition: background ease-in-out 0.5s;
+  transition: background ease-in-out 0.5s, transform ease-in-out 0.2s;
   background-color: #7faae8;
 }
 
+
+
 .slider__wrapper label:hover span {
   background: #fff;
+}
+
+.slider__wrapper label:active span {
+  transform: scale(1.3);
 }
 
 #slider__item_1:checked~.slider__control .slider__dots label:nth-of-type(1) span,
