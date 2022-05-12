@@ -17,8 +17,14 @@ body {
 }
 
 .slider__wrapper {
-	width: 80%;
-	height: 80%;
+	width: 60%;
+	height: 60%;
+}
+
+@media (max-width: 767px) {
+  .slider__wrapper {
+    width: 90%;
+  }
 }
 
 .slider__wrapper>input {
@@ -28,6 +34,12 @@ body {
 .slider__wrapper .slider__dots {
 	display: flex;
 	justify-content: end;
+  align-self: flex-start;
+}
+@media (max-width: 767px) {
+  .slider__wrapper .slider__dots {
+    align-self: center;
+  }
 }
 
 .slider__wrapper label {
@@ -44,6 +56,18 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+@media (max-width: 767px) {
+  .slider__control {
+    flex-direction: column-reverse;
+  }
+  .slider__text {
+    align-self: start;
+    margin-bottom: 1em;
+  }
+  .slider__dots {
+   margin-bottom: 1em;
+  }
 }
 
 .slider__wrapper label span {
@@ -75,8 +99,9 @@ body {
   overflow: hidden;
 	height: 100%;
 	margin-bottom: 1em;
-  background-color: #4e4e4e;
+  background-color: #4e4e4e56;
 	border-radius: 0.5em;
+  box-shadow: 0 0 20px #1f1f1f;
 }
 .slider__images {
   display: flex;
@@ -95,7 +120,12 @@ body {
 	object-fit: contain;
 	transition: all 0.5s linear;
 }
-
+.slider__image_1 img {
+  object-fit: cover;
+}
+.slider__image_3 img {
+  height: 106%;
+}
 .slider__text {
 	transition: all 0.5s linear;
 }
