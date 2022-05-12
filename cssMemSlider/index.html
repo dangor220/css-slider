@@ -1,14 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CSS Mem Slider</title>
-  <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>CSS Mem Slider</title>
+		<link rel="stylesheet" href="normalize.css" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="slider _container">
+			<div class="slider__wrapper">
+				<input type="radio" name="mem" id="slider__item_1" checked />
+				<input type="radio" name="mem" id="slider__item_2" />
+				<input type="radio" name="mem" id="slider__item_3" />
+				<input type="radio" name="mem" id="slider__item_4" />
+				<input type="radio" name="mem" id="slider__item_5" />
+
+				<div class="slider__track">
+					<div class="slider__item slider__item_1">
+						<div class="slider__image">
+							<img src="./assets/img/2.gif" alt="mem_1" />
+						</div>
+					</div>
+					<div class="slider__item slider__item_2">
+						<div class="slider__image">
+							<img src="./assets/img/1.jpg" alt="mem_2" />
+						</div>
+					</div>
+					<div class="slider__item slider__item_3">
+						<div class="slider__image">
+							<img src="./assets/img/3.gif" alt="mem_3" />
+						</div>
+					</div>
+					<div class="slider__item slider__item_4">
+						<div class="slider__image">
+							<img src="./assets/img/4.png" alt="mem_4" />
+						</div>
+					</div>
+					<div class="slider__item slider__item_5">
+						<div class="slider__image">
+							<img src="./assets/img/5.jpg" alt="mem_5" />
+						</div>
+					</div>
+				</div>
+
+				<div class="slider__control">
+					<div class="slider__text">
+						<div class="slider__text_1">
+							Когда забыл покормить кота и уселся писать код
+						</div>
+						<div class="slider__text_2">
+							Открой глаза от имени администратора (не очень)
+						</div>
+						<div class="slider__text_3">Pull Request</div>
+						<div class="slider__text_4">Some text 4</div>
+						<div class="slider__text_5">Some text 5</div>
+					</div>
+
+					<div class="slider__dots">
+						<label for="slider__item_1"><span></span></label>
+						<label for="slider__item_2"><span></span></label>
+						<label for="slider__item_3"><span></span></label>
+						<label for="slider__item_4"><span></span></label>
+						<label for="slider__item_5"><span></span></label>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
