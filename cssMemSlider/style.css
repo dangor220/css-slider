@@ -25,6 +25,12 @@ body {
     width: 90%;
   }
 }
+@media (min-width: 1441px) {
+  .slider__wrapper {
+    width: 41em;
+  }
+}
+
 
 .slider__wrapper>input {
   display: none;
